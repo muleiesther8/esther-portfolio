@@ -1,0 +1,196 @@
+/* =============================================
+   ABOUT PAGE STYLES
+   ============================================= */
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero-glow {
+  position: absolute;
+  top: -120px; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 500px;
+  background: radial-gradient(ellipse, rgba(155,89,245,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* === INTRO SPLIT === */
+.about-intro { padding: 100px 0; }
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 72px;
+  align-items: center;
+}
+
+/* Avatar */
+.about-avatar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-frame {
+  position: relative;
+  width: 220px; height: 220px;
+}
+
+.avatar-initials {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-deep), var(--purple-mid));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  border: 3px solid var(--border-hover);
+  box-shadow: 0 0 60px rgba(108,63,197,0.35);
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 2px dashed rgba(108,63,197,0.35);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.avatar-dot {
+  position: absolute;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--purple-bright);
+  border: 2px solid var(--bg-dark);
+}
+.avatar-dot.top-right  { top: 8px; right: 8px; }
+.avatar-dot.bottom-left { bottom: 8px; left: 8px; background: var(--accent); }
+
+.avatar-caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Text col */
+.about-text-col h2 { margin-bottom: 8px; }
+.about-text-col p   { line-height: 1.8; }
+
+.about-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+/* === FUN FACTS === */
+.fun-facts-section {
+  padding: 100px 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 100%, rgba(108,63,197,0.1) 0%, transparent 70%);
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.fact-card { text-align: center; }
+
+.fact-emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.fact-card h3 { font-size: 1rem; margin-bottom: 10px; }
+
+/* === TIMELINE === */
+.timeline-section { padding: 100px 0; }
+
+.timeline {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--purple-mid), var(--purple-bright), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -27px; top: 28px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--purple-mid);
+  border: 2px solid var(--bg-dark);
+  z-index: 1;
+  transition: all var(--transition);
+}
+
+.timeline-dot.active {
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+  animation: pulse 2s infinite;
+}
+
+.timeline-content {
+  padding: 24px 28px;
+}
+
+.timeline-content.active-card {
+  border-color: rgba(255,109,244,0.4);
+  background: rgba(255,109,244,0.05);
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--purple-bright);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 { font-size: 1rem; margin-bottom: 8px; }
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  .about-actions { justify-content: center; }
+  .divider { margin-left: auto; margin-right: auto; }
+  .section-subtitle { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 480px) {
+  .timeline { padding-left: 24px; }
+  .about-actions { flex-direction: column; align-items: center; }
+}

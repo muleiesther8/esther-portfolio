@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Mulei Esther — Full-Stack Developer. See Essiz Beauty Hub, Essiz Omega Drift, and more." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <title>Projects — Mulei Esther</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/projects.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">Esther<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label reveal">What I've built</p>
+        <h1 class="reveal">My <span class="gradient-text">Projects</span></h1>
+        <p class="reveal">Real systems. Real users. Real impact — each one born from a genuine problem.</p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects by technology">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="php">PHP</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="css">CSS</button>
+        </div>
+
+        <!-- JS renders cards here -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite">
+          <!-- Populated by projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="projects-cta">
+      <div class="container">
+        <div class="card cta-card reveal">
+          <h2>Have a project in mind?</h2>
+          <p>I'm always open to discussing new ideas, collaborations, or opportunities to solve real problems together.</p>
+          <a href="contact.html" class="btn btn-primary">Let's Talk →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:essyart.essizverses1@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+      </div>
+      <p>© <span id="year"></span> Mulei Esther · Built with HTML, CSS & JavaScript 💜</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../js/main.js"></script>
+  <script src="../js/projects.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Mulei Esther — Full-Stack Developer. Let's build something together." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <title>Contact — Mulei Esther</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">Esther<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label reveal">Let's connect</p>
+        <h1 class="reveal">Get in <span class="gradient-text">Touch</span></h1>
+        <p class="reveal">Have a project, an idea, or just want to say hi? My inbox is always open.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+
+        <!-- LEFT: Info -->
+        <div class="contact-info">
+          <p class="section-label reveal">Direct channels</p>
+          <h2 class="reveal">Let's build<br/>something great</h2>
+          <div class="divider reveal"></div>
+          <p class="reveal">
+            I'm open to freelance projects, internships, collaborations, and anything
+            that solves a real problem. I respond within 24–48 hours.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:essyart.essizverses1@gmail.com" class="channel-card card reveal" aria-label="Send email">
+              <span class="channel-icon">✉️</span>
+              <div>
+                <span class="channel-label mono">Email</span>
+                <span class="channel-value">essyart.essizverses1@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" class="channel-card card reveal" aria-label="Visit GitHub profile">
+              <span class="channel-icon">🐙</span>
+              <div>
+                <span class="channel-label mono">GitHub</span>
+                <span class="channel-value">github.com/muleiesther8</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" class="channel-card card reveal" aria-label="Visit LinkedIn profile">
+              <span class="channel-icon">💼</span>
+              <div>
+                <span class="channel-label mono">LinkedIn</span>
+                <span class="channel-value">Esther Mulei</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-availability reveal">
+            <span class="badge-dot" style="background:var(--success)"></span>
+            <span>Available for opportunities · Nairobi, Kenya</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-col reveal">
+          <div class="form-card card">
+            <h3>Send a message</h3>
+            <p class="form-note">All fields required. Your data is never stored or shared.</p>
+
+            <form id="contactForm" novalidate autocomplete="off">
+
+              <!-- Honeypot — hidden from real users, traps bots -->
+              <input
+                type="text"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"
+              />
+
+              <div class="field-wrap">
+                <label for="name" class="field-label">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="field-input"
+                  placeholder="Your name"
+                  maxlength="80"
+                  data-label="Full name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="field-wrap">
+                <label for="email" class="field-label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="field-input"
+                  placeholder="you@example.com"
+                  maxlength="120"
+                  data-label="Email"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="field-wrap">
+                <label for="subject" class="field-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="field-input"
+                  placeholder="What's this about?"
+                  maxlength="120"
+                  data-label="Subject"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="field-wrap">
+                <label for="message" class="field-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="field-input"
+                  rows="5"
+                  placeholder="Tell me about your project or idea…"
+                  maxlength="500"
+                  data-label="Message"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="char-count mono">0 / 500</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit btn-full">
+                Send Message 💜
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast notification (injected by JS) -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:essyart.essizverses1@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+      </div>
+      <p>© <span id="year"></span> Mulei Esther · Built with HTML, CSS & JavaScript 💜</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

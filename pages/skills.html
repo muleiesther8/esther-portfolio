@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skills of Mulei Esther — HTML, CSS, JavaScript, MERN Stack, PHP, Python and more." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <title>Skills — Mulei Esther</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/skills.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">Esther<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label reveal">Tech stack</p>
+        <h1 class="reveal">My <span class="gradient-text">Skills</span></h1>
+        <p class="reveal">A growing toolkit — built through projects, certifications, and late nights debugging things that really mattered.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS GRID -->
+    <section class="skills-section">
+      <div class="container">
+
+        <div class="skills-category">
+          <p class="section-label">Frontend</p>
+          <div class="skills-grid" id="frontendGrid"></div>
+        </div>
+
+        <div class="skills-category">
+          <p class="section-label">Backend & Databases</p>
+          <div class="skills-grid" id="backendGrid"></div>
+        </div>
+
+        <div class="skills-category">
+          <p class="section-label">Frameworks & Stacks</p>
+          <div class="skills-grid" id="frameworkGrid"></div>
+        </div>
+
+        <div class="skills-category">
+          <p class="section-label">Tools & More</p>
+          <div class="skills-grid" id="toolsGrid"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="approach-section">
+      <div class="container">
+        <p class="section-label reveal">How I work</p>
+        <h2 class="section-title reveal">My development approach</h2>
+        <div class="divider reveal"></div>
+        <div class="approach-grid">
+          <div class="approach-item card reveal">
+            <span class="approach-num gradient-text">01</span>
+            <h3>Understand First</h3>
+            <p>Before writing a single line, I understand the client's requirements, constraints, and goals.</p>
+          </div>
+          <div class="approach-item card reveal">
+            <span class="approach-num gradient-text">02</span>
+            <h3>Design with Purpose</h3>
+            <p>Every decision — structure, UI, database schema — is made intentionally, not by default.</p>
+          </div>
+          <div class="approach-item card reveal">
+            <span class="approach-num gradient-text">03</span>
+            <h3>Build Securely</h3>
+            <p>Security isn't an afterthought. I bake validation, sanitization, and safe patterns in from day one.</p>
+          </div>
+          <div class="approach-item card reveal">
+            <span class="approach-num gradient-text">04</span>
+            <h3>Ship & Refine</h3>
+            <p>I ship working software, then iterate based on real feedback — not theoretical perfection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:essyart.essizverses1@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+      </div>
+      <p>© <span id="year"></span> Mulei Esther · Built with HTML, CSS & JavaScript 💜</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../js/main.js"></script>
+  <script src="../js/skills.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

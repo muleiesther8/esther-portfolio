@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mulei Esther — Full-Stack Developer based in Nairobi, Kenya. Building systems that solve real-world problems." />
+  <!-- Security headers via meta tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <title>Mulei Esther — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="index.html">Esther<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/skills.html">Skills</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/projects.html">Projects</a>
+    <a href="pages/skills.html">Skills</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="gradient-text">Mulei Esther</span>
+        </h1>
+
+        <div class="hero-typed reveal">
+          <span class="typed-prefix">I am a </span>
+          <span class="typed-word"></span>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-tagline reveal">
+          I build systems that solve real-world problems — by understanding the client's
+          requirements first and working from their point of view.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
+          <a href="pages/contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <span class="meta-item">📍 Nairobi, Kenya</span>
+          <span class="meta-divider">·</span>
+          <span class="meta-item">🎓 BBIT · Year 3</span>
+          <span class="meta-divider">·</span>
+          <span class="meta-item">✅ Certified Full-Stack Dev</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="what-i-do">
+      <div class="container">
+        <p class="section-label">What I Do</p>
+        <h2 class="section-title">Building with purpose,<br/>shipping with care</h2>
+        <div class="divider"></div>
+
+        <div class="services-grid">
+          <div class="service-card card reveal">
+            <div class="service-icon">🖥️</div>
+            <h3>Frontend Development</h3>
+            <p>Crafting responsive, accessible interfaces with HTML, CSS, and JavaScript that feel great to use.</p>
+          </div>
+          <div class="service-card card reveal">
+            <div class="service-icon">⚙️</div>
+            <h3>Backend Development</h3>
+            <p>Building robust APIs and server logic with Node.js, PHP, and Python — secure by design.</p>
+          </div>
+          <div class="service-card card reveal">
+            <div class="service-icon">🗄️</div>
+            <h3>Database Design</h3>
+            <p>Structuring MySQL and MongoDB databases for performance, integrity, and scalability.</p>
+          </div>
+          <div class="service-card card reveal">
+            <div class="service-icon">📦</div>
+            <h3>Digital Products</h3>
+            <p>Designing and delivering complete digital solutions — from idea to deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK STATS -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-number gradient-text">2+</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number gradient-text">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number gradient-text">3rd</span>
+            <span class="stat-label">Year BBIT</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number gradient-text">∞</span>
+            <span class="stat-label">Problems to Solve</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip">
+      <div class="container">
+        <div class="cta-card card reveal">
+          <h2>Got a problem that needs solving?</h2>
+          <p>Let's talk. I'd love to understand your vision and build something meaningful together.</p>
+          <a href="pages/contact.html" class="btn btn-primary">Start a Conversation →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:essyart.essizverses1@gmail.com" aria-label="Email" title="Email">✉️</a>
+        <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">💼</a>
+      </div>
+      <p>© <span id="year"></span> Mulei Esther · Built with HTML, CSS & JavaScript 💜</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
