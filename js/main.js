@@ -348,6 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'Problem Solver',
     'Digital Creator',
     'MERN Developer',
-    'Code & Creativity'
+    'Coder & Creative Designer',
   ]);
 });

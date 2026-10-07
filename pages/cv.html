@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV of Mulei Esther — Full-Stack Developer, Digital Product Developer, Nairobi Kenya." />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <title>CV — Mulei Esther</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/cv.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="../index.html">Esther<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label reveal">My Resume</p>
+        <h1 class="reveal">Curriculum <span class="gradient-text">Vitae</span></h1>
+        <p class="reveal">A snapshot of my journey, skills, and everything I've built so far.</p>
+        <div class="cv-hero-actions reveal">
+          <button class="btn btn-primary" id="downloadBtn" onclick="downloadCV()">
+            ⬇️ Download PDF
+          </button>
+          <button class="btn btn-outline" onclick="window.print()">
+            🖨️ Print CV
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="container">
+        <div class="cv-wrapper" id="cvContent">
+
+          <!-- CV HEADER -->
+          <div class="cv-header card reveal">
+            <div class="cv-header-left">
+              <div class="cv-avatar">ME</div>
+            </div>
+            <div class="cv-header-right">
+              <h1 class="cv-name">Mulei Esther</h1>
+              <p class="cv-title gradient-text">Full-Stack Developer · Digital Product Developer</p>
+              <div class="cv-contacts">
+                <a href="mailto:essyart.essizverses1@gmail.com" class="cv-contact-item">
+                  <span>✉️</span> essyart.essizverses1@gmail.com
+                </a>
+                <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" class="cv-contact-item">
+                  <span>🐙</span> github.com/muleiesther8
+                </a>
+                <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" class="cv-contact-item">
+                  <span>💼</span> LinkedIn — Esther Mulei
+                </a>
+                <a href="https://esthermportfolio.netlify.app" target="_blank" rel="noopener noreferrer" class="cv-contact-item">
+                  <span>🌐</span> esthermportfolio.netlify.app
+                </a>
+                <!-- REPLACE WITH YOUR REAL WHATSAPP NUMBER -->
+                <a href="https://wa.me/254106679770" target="_blank" rel="noopener noreferrer" class="cv-contact-item">
+                  <span>📱</span> +254 106 679 770
+                </a>
+                <span class="cv-contact-item">
+                  <span>📍</span> Nairobi, Kenya
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROFILE -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">👩‍💻</span>
+              <h2 class="cv-block-title">Profile</h2>
+            </div>
+            <div class="cv-block-body">
+              <p class="cv-profile-text">
+                A certified full-stack developer and BBIT student at Mount Kenya University,
+                passionate about building digital systems that solve real-world problems.
+                I approach every project by understanding the client's requirements first and
+                working from their point of view — delivering solutions that are functional,
+                secure, and user-centered. Experienced across the full development lifecycle,
+                from ideation to deployment, with a growing portfolio spanning e-commerce,
+                creative platforms, IoT, AI, and digital product development.
+              </p>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">💼</span>
+              <h2 class="cv-block-title">Experience</h2>
+            </div>
+            <div class="cv-block-body">
+              <div class="cv-entry">
+                <div class="cv-entry-top">
+                  <div>
+                    <h3 class="cv-entry-title">Freelance Full-Stack Developer</h3>
+                    <p class="cv-entry-sub">Self-Employed · Remote</p>
+                  </div>
+                  <span class="cv-entry-date mono">2025 — Present</span>
+                </div>
+                <ul class="cv-entry-points">
+                  <li>Design and develop responsive websites for clients from requirements gathering to deployment</li>
+                  <li>Build secure, user-centered web solutions tailored to client needs and business goals</li>
+                  <li>Manage full project lifecycle independently — scoping, development, testing, and delivery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECTS -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">🚀</span>
+              <h2 class="cv-block-title">Projects</h2>
+            </div>
+            <div class="cv-block-body">
+
+              <div class="cv-entry">
+                <div class="cv-entry-top">
+                  <div>
+                    <h3 class="cv-entry-title">Essiz Beauty Hub</h3>
+                    <p class="cv-entry-sub">E-Commerce Platform · PHP + MySQL + XAMPP</p>
+                  </div>
+                  <span class="cv-entry-date mono">2024</span>
+                </div>
+                <ul class="cv-entry-points">
+                  <li>Built a full e-commerce system for campus students to access skincare, haircare and perfume products with delivery</li>
+                  <li>Implemented product catalogue, cart system, and order management with a secure PHP + MySQL backend</li>
+                </ul>
+                <a href="https://github.com/muleiesther8/EssizBeautyHub.git" target="_blank" rel="noopener noreferrer" class="cv-project-link">🐙 GitHub →</a>
+              </div>
+
+              <div class="cv-entry">
+                <div class="cv-entry-top">
+                  <div>
+                    <h3 class="cv-entry-title">Essiz Omega Drift</h3>
+                    <p class="cv-entry-sub">Creative Platform · HTML + CSS + JavaScript</p>
+                  </div>
+                  <span class="cv-entry-date mono">2025</span>
+                </div>
+                <ul class="cv-entry-points">
+                  <li>Designed and built a creative platform where users interact with syntax and code in a playful, poetic manner</li>
+                  <li>Features a poem library and a personal space where users can write, save, and manage their own poems</li>
+                </ul>
+                <a href="https://github.com/muleiesther8/EssizOmega-Drift.git" target="_blank" rel="noopener noreferrer" class="cv-project-link">🐙 GitHub →</a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- EDUCATION -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">🎓</span>
+              <h2 class="cv-block-title">Education</h2>
+            </div>
+            <div class="cv-block-body">
+              <div class="cv-entry">
+                <div class="cv-entry-top">
+                  <div>
+                    <h3 class="cv-entry-title">Bachelor of Business Information Technology (BBIT)</h3>
+                    <p class="cv-entry-sub">Mount Kenya University · Nairobi, Kenya</p>
+                  </div>
+                  <span class="cv-entry-date mono">2024 — Present</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CERTIFICATIONS -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">🏆</span>
+              <h2 class="cv-block-title">Certifications</h2>
+            </div>
+            <div class="cv-block-body">
+              <div class="cv-certs-grid">
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">Full-Stack Development</h3>
+                    <span class="tag">PLP</span>
+                  </div>
+                  <p class="cv-cert-sub">Power Learn Project Africa</p>
+                </div>
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">Frontend Development</h3>
+                    <span class="tag">She Code Africa</span>
+                  </div>
+                  <p class="cv-cert-sub">Digital Badge · She Code Africa Program</p>
+                </div>
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">Learn a Thon Certificate</h3>
+                    <span class="tag">CISCO</span>
+                  </div>
+                  <p class="cv-cert-sub">Cisco Networking Academy</p>
+                </div>
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">Digital Product Development</h3>
+                    <span class="tag">TUM · Africa meets Bavaria</span>
+                  </div>
+                  <p class="cv-cert-sub">Technical University of Munich Partnership Program</p>
+                </div>
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">OTSC — 6 Certificates</h3>
+                    <span class="tag">ISOC · AfChix</span>
+                  </div>
+                  <p class="cv-cert-sub">Internet Society · Learned under the AfChix Community</p>
+                </div>
+
+                <div class="cv-cert-card">
+                  <div class="cv-cert-top">
+                    <h3 class="cv-cert-title">AI Training</h3>
+                    <span class="tag">ATF Challenge</span>
+                  </div>
+                  <p class="cv-cert-sub">Africa Tech Festival AI Challenge</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">⚡</span>
+              <h2 class="cv-block-title">Technical Skills</h2>
+            </div>
+            <div class="cv-block-body cv-skills-body">
+              <div class="cv-skill-group">
+                <span class="cv-skill-label mono">Frontend</span>
+                <div class="cv-skill-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-label mono">Backend</span>
+                <div class="cv-skill-tags">
+                  <span class="tag">PHP</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Node.js</span>
+                </div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-label mono">Databases</span>
+                <div class="cv-skill-tags">
+                  <span class="tag">MySQL</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-label mono">Stacks & Tools</span>
+                <div class="cv-skill-tags">
+                  <span class="tag">MERN</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">XAMPP</span>
+                </div>
+              </div>
+              <div class="cv-skill-group">
+                <span class="cv-skill-label mono">Domains</span>
+                <div class="cv-skill-tags">
+                  <span class="tag">IoT</span>
+                  <span class="tag">AI</span>
+                  <span class="tag">Digital Products</span>
+                  <span class="tag">UI/UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LANGUAGES -->
+          <div class="cv-block reveal">
+            <div class="cv-block-header">
+              <span class="cv-block-icon">🌍</span>
+              <h2 class="cv-block-title">Languages</h2>
+            </div>
+            <div class="cv-block-body">
+              <div class="cv-languages">
+                <div class="cv-lang-item">
+                  <span class="cv-lang-name">English</span>
+                  <span class="tag">Professional Proficiency</span>
+                </div>
+                <div class="cv-lang-item">
+                  <span class="cv-lang-name">Swahili</span>
+                  <span class="tag">Native</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="mailto:essyart.essizverses1@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/muleiesther8" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/esther-mulei-98b2b3321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+      </div>
+      <p>© <span id="year"></span> Mulei Esther · Built with HTML, CSS & JavaScript 💜</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="../js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Force all reveal elements visible on CV page
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+  });
+
+  function downloadCV() {
+    // Force all reveals visible before printing
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+    const btn = document.getElementById('downloadBtn');
+    btn.textContent = 'Preparing…';
+    btn.disabled = true;
+    setTimeout(() => {
+      window.print();
+      btn.textContent = '⬇️ Download PDF';
+      btn.disabled = false;
+    }, 500);
+  }
+</script>
